@@ -6,7 +6,3 @@ RUN apt-get update && apt-get -y install curl lsb-release \
 	nmap libdbd-mysql-perl rsync libaio1 libev4 libcurl4-openssl-dev libncurses5 \
 	&& dpkg -i /tmp/percona-xtrabackup.deb && dpkg -i /tmp/mysql-client.deb && rm -Rf /tmp/percona-xtrabackup.deb \
 	&& rm -rf /var/lib/apt/lists/*
-
-# COPY entrypoint /usr/local/bin/entrypoint
-# RUN chmod +x /usr/local/bin/entrypoint
-# ENTRYPOINT ["/usr/local/bin/entrypoint"]
